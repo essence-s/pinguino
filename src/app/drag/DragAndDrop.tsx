@@ -48,7 +48,7 @@ export default function DragAndDrop({}: Props) {
 			// 	}
 			// }
 
-			const clipboardData = event.clipboardData || window.clipboardData;
+			const clipboardData: any = event.clipboardData;
 			const items = clipboardData.items;
 			let imageContainer = dino.current;
 			for (let i = 0; i < items.length; i++) {
